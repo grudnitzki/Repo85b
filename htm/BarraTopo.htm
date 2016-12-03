@@ -1,0 +1,82 @@
+<script type="text/javascript" src='<PathTo file="htm/LojaLib.js">'></script>
+<script type="text/javascript" src='<PathTo file="htm/JurosParcelas.js">'></script>
+<script type="text/javascript" src='<PathTo file="htm/js/owlCarouselMin.js">'></script>
+<link rel="stylesheet" href="<BaseLoja>htm/css/bootstrapmin.css">
+<link rel="stylesheet" href="<BaseLoja>htm/css/owlCarousel.css">
+
+<header class="zf-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <span class="pull-right">
+          <img src="<BaseLoja>images/phoneTop.png" alt="">
+        </span>
+        <nav class="zf-header-infomenu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Que Somos</a></li>
+            <li><a href="#">Minha Conta</a></li>
+            <li><a href="#">Rastrear Pedido</a></li>
+            <li><a href="#">Ajuda</a></li>
+            <li><a href="#">Atendimento</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 zf-header-logo">
+        <a href="<StoreDomain>">
+          <img class="" alt="<NomeLoja>" title="<NomeLoja>" src='<PathTo file="images/LogoTopo.svg">'>
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-2 col-md-3 col-lg-2 zf-header-login">
+        <span>Olá, <a href="#">clique aqui</a> e faça o login.</span>
+      </div>
+      <div class="col-xs-12 col-sm-5 col-md-3 col-lg-4 zf-search-top-container">
+        <form id="autocomplete-form" class="zFHeaderFormSeach" method="GET" action="/listaProdutos.asp">
+          <input type="hidden" name="IDLoja" value="<IDLoja>">
+          <input type="hidden" name="Digitada" value="True">
+          <input id="autocomplete" type="text" value="<SearchText>" name="Texto" placeholder="Busque produtos...">
+          <button  class="zf-btn-topsearch">
+            <img64 src="<BaseLoja>images/icoSearch.svg" plain="true" width="25" height="25" alt="Buscar" title="Buscar">
+          </button>
+        </form>
+      </div>
+      <div class="col-xs-2 col-sm-2 col-md-3 col-lg-3 pull-right zf-carttop-container">
+        <div class="col-md-9 col-lg-9 font-primary">
+          <h5 class="primary-color">Minha escola:</h5>
+          <span>3 itens | R$ 129,00</span>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 hidden-sm">
+          <img64 src="<BaseLoja>images/icoCartTop.svg" plain="true" alt="cesta de compras" title="Ir para o carrinho de cesta">
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <ul class="zf-header-menu font-primary">
+          <li><a href="#">Todos</a></li>
+          <li><a href="#">Sutiã</a></li>
+          <li><a href="#">Calcinhas</a></li>
+          <li><a href="#">Sensual</a></li>
+          <li><a href="#">Meias</a></li>
+          <li><a href="#">Modeladores</a></li>
+          <li><a href="#">Praia</a></li>
+          <li><a href="#">Fitness</a></li>
+          <li><a href="#">Plus size</a></li>
+          <li><a href="#">Nightwear</a></li>
+          <li><a href="#">Masculino</a></li>
+          <li><a href="#">Marcas</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="zf-no-home">
+  </div>
+  <div class="zf-header-banner">
+    <IncludeHTMLIn src="zFMainBanners.html" in="Home">
+  </div>
+</header>
+
+<article class="container">
